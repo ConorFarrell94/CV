@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conor Farrell - CV</title>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<style>
+			body {
+				font-family: "Poppins", sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #2c3e50;
+				min-height: 100vh;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.animated-background {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background: linear-gradient(to bottom, #8e44ad, #2c3e50);
+				animation: gradientAnimation 15s linear 1 forwards,
+					fadeIn 3s ease-in-out forwards;
+			}
+
+			@keyframes gradientAnimation {
+				0% {
+					background-position: 0% 0%;
+				}
+				100% {
+					background-position: 0% 100%;
+				}
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+
+			.navbar {
+				background-color: transparent;
+			}
+
+			.navbar-brand,
+			.navbar-nav .nav-link {
+				color: #ffffff;
+				font-weight: 700;
+				transition: text-decoration 0.3s;
+			}
+
+			.navbar-brand:hover,
+			.navbar-nav .nav-link:hover {
+				text-decoration: underline;
+				text-decoration-color: #ff8c00;
+			}
+
+			.navbar-brand::after,
+			.navbar-nav .nav-link::after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 2px;
+				background-color: #ff8c00;
+				transition: width 0.3s;
+			}
+
+			.navbar-brand:hover::after,
+			.navbar-nav .nav-link:hover::after {
+				width: 100%;
+			}
+
+			.container {
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				margin-top: 20px;
+				color: rgba(255, 255, 255, 0.8);
+			}
+
+			.jumbotron {
+				background-color: transparent;
+				color: #ffffff;
+				opacity: 0;
+				animation: fadeInBanner 3s ease-in-out forwards;
+			}
+
+			@keyframes fadeInBanner {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+
+			.contact-section {
+				background-color: transparent;
+				color: #ffffff;
+				text-align: center;
+				padding: 20px 0;
+				margin-top: auto;
+			}
+
+			.contact-icons {
+				font-size: 30px;
+				margin: 0 10px;
+				color: #ffffff;
+				display: flex;
+				justify-content: center;
+			}
+
+			.contact-icons .icon {
+				margin: 0 10px;
+			}
+
+			section {
+				color: #ffffff;
+				text-align: left;
+				display: none;
+			}
+
+			.vblankspace {
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="animated-background"></div>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#home">Conor Farrell</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#work-experience">Work Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#education">Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div id="home" class="jumbotron">
+				<h1>Hi there!</h1>
+				<p>
+					This is where you can learn more about my professional background and
+					projects.
+				</p>
+			</div>
+
+			<section id="main-content">
+				<p>
+					My name is Conor, and I'm a recent graduate in Computer Science with a
+					passion for software development and problem-solving. I have a strong
+					foundation in programming languages such as Java, Python and
+					JavaScript and I'm eager to apply my skills in a professional
+					setting.
+				</p>
+				<p>
+					I thrive in collaborative environments and enjoy tackling challenging
+					projects. My education has equipped me with a solid understanding of
+					algorithms, data structures, and software engineering principles.
+				</p>
+				<p>
+					Throughout my studies, I've completed several projects that
+					demonstrate my ability to design and implement solutions to real-world
+					problems. I'm particularly proud of my project where I developed a web
+					application for managing and visualizing data in regards to wounded
+					WW1 veterans.
+				</p>
+			</section>
+
+			<section id="work-experience" style="display: none">
+				<h2>Work Experience</h2>
+				<div class="vblankspace"></div>
+				<div>
+					<h3>Irish Life Investment Managers - ILIM</h3>
+					<p>Software Developer (February 2022 - August 2022)</p>
+					<ul>
+						<li>
+							Spearheaded the development of RPA solutions, significantly
+							improving process efficiency.
+						</li>
+						<li>
+							Front-end developer for internal websites using Angular, HTML, and
+							JavaScript.
+						</li>
+						<li>
+							Utilized an agile ticket system for effective task management
+							(Jira).
+						</li>
+						<li>
+							Developed scripts for task automation using PowerShell, Selenium,
+							and Automate Anywhere followed by testing with Pester.
+						</li>
+						<li>Implemented use of software development life cycles.</li>
+						<li>
+							Best practices for industry standard coding; Effective use of
+							comments and naming conventions.
+						</li>
+						<li>Identified security vulnerabilities using Veracode.</li>
+						<li>
+							Participated in a company-wide initiative to enhance the
+							compatibility of automated bots with the Windows 10 environment.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Vodafone Ireland</h3>
+					<p>Retail Sales Colleague (January 2020 - January 2022)</p>
+					<ul>
+						<li>
+							Monitoring all company inventory to ensure stock levels and
+							databases were updated.
+						</li>
+						<li>
+							Problem-solved and proposed streamlined audit and stock management
+							procedures.
+						</li>
+						<li>
+							Developed expertise in Vodafone’s product offerings including
+							mobile phones, plans and accessories, enabling effective
+							consultation with customers.
+						</li>
+						<li>
+							Collaborated with team members to ensure smooth operations and
+							positive customer experience.
+						</li>
+						<li>
+							Resolved customer inquiries and concerns promptly and
+							professionally, ensuring high levels of customer satisfaction and
+							retention.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Eir Ireland</h3>
+					<p>Retail Sales Colleague (October 2018 - September 2019)</p>
+					<ul>
+						<li>
+							Provided up-to-date product knowledge and used a consultative
+							sales approach to meet customer needs.
+						</li>
+						<li>
+							Consistently met and surpassed sales targets through proactive
+							engagement with customers and effective upselling techniques.
+						</li>
+						<li>
+							Actively participated in team meetings and training sessions to
+							enhance product knowledge and sales skills.
+						</li>
+						<li>
+							Demonstrated in-depth knowledge of Eir’s products and services
+							through communication to customers.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="education" style="display: none">
+				<h2>Education</h2>
+				<div style="height: 50px"></div>
+				<div>
+					<h3>
+						Bachelor of Science: Computer Science (Infrastructure), TU Dublin
+						City Campus
+					</h3>
+					<p>1st Class Honours, Grade of 1:1; Graduated 2023.</p>
+				</div>
+				<div class="vblankspace"></div>
+				<div>
+					<h3>Computer Maintenance and Network Installation, CDETB</h3>
+					<p>
+						Learning the basics of networking and computer architecture and
+						completing CompTIA exams.
+					</p>
+				</div>
+				<div class="vblankspace"></div>
+				<div>
+					<h3>Leaving Certificate & ECDL, Salesian College</h3>
+					<p>
+						Acquiring foundational knowledge in Design and Communication
+						Graphics. Proficiency in Microsoft Office applications.
+					</p>
+				</div>
+			</section>
+
+			<section id="projects" style="display: none">
+				<h2>Projects</h2>
+				<div class="vblankspace"></div>
+				<div>
+					<h3>C</h3>
+					<p>
+						Developed a Linux daemon that allows for upload, manual backup, file
+						transfer and information logging for a company comprising of
+						multiple departments. Program to simulate a maths quiz game with a
+						maximum of 5 questions per round. User can only display results once
+						a round has been completed. This game will run until the user has
+						decided he/she has played enough rounds.
+					</p>
+				</div>
+				<div>
+					<h3>Python</h3>
+					<p>
+						Created a program that can accept any number of text files and
+						number them for later access. The user can search for documents
+						using key words, which will return the document number for each one
+						that contains the keyword. These documents can then be returned to
+						the user via the terminal. Program designed to behave similar to a
+						shopping cart found online using multiples classes. Has the ability
+						to create customers, list products, add/remove from the cart, view
+						cart, and finally check out.
+					</p>
+				</div>
+				<div>
+					<h3>Java</h3>
+					<p>
+						Designed a "Topic Modeller" program with a user-friendly interface
+						to compare the similarity of two text files. The program includes a
+						GUI for file selection, and the comparison is based on identifying
+						the top ten common words in each document. Developed a server for an
+						auction house, allowing clients to bid on items. The highest bidder
+						wins the items, and the server continues until no items are left.
+						Users can add new items during the auction, and new clients can
+						join. This project is for demonstration purposes, showcasing Java
+						sockets and multi-threading, with no real-world transactions.
+					</p>
+				</div>
+				<div>
+					<h3>HTML/JavaScript/CSS</h3>
+					<p>
+						Website for analysis of Wounded WW1 Irish Veterans. Utilises a
+						MongoDB cloud cluster for storage with custom HTTPS endpoints for
+						fetching data. Text search results can be displayed using data
+						tables which can then be further refined to suit the needs of the
+						user. 2-D body model allows the user to select body parts and
+						display the veterans wounded in that specific part. Geographical
+						spread of the veterans can also be displayed using Leaflet.js.
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div class="contact-section">
+			<div class="container text-center">
+				<h2>Contact Me</h2>
+				<p>Feel free to reach out to me via:</p>
+				<div class="contact-icons">
+					<a
+						href="https://www.linkedin.com/in/conor-farrell-61725a11b/"
+						class="icon"
+						><i class="fab fa-linkedin"></i
+					></a>
+					<a href="https://github.com/ConorFarrell94" class="icon"
+						><i class="fab fa-github"></i
+					></a>
+				</div>
+				<p>
+					Email:
+					<a href="mailto:conorfarrell187@gmail.com"
+						>conorfarrell187@gmail.com</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const sections = [
+					"home",
+					"main-content",
+					"work-experience",
+					"education",
+					"projects",
+				];
+				const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+				const homeLink = document.querySelector(".navbar-brand");
+
+				function showHomeAndMainContent() {
+					sections.forEach((section) => {
+						// Hide all sections except Home and Main Content
+						if (section !== "home" && section !== "main-content") {
+							document.getElementById(section).style.display = "none";
+						}
+					});
+					// Display the Home and Main Content sections
+					document.getElementById("home").style.display = "block";
+					document.getElementById("main-content").style.display = "block";
+
+					// Apply fade-in animation to the Main Content section
+					document.getElementById("main-content").style.animation =
+						"fadeInBanner 3s ease-in-out forwards";
+
+					// Update body min height based on the content height
+					const activeSectionHeight = Math.max(
+						document.getElementById("home").scrollHeight,
+						document.getElementById("main-content").scrollHeight
+					);
+					document.body.style.minHeight = `${activeSectionHeight + 100}px`; // extra space
+				}
+
+				// Add event listeners to the name link and other nav links
+				homeLink.addEventListener("click", function (e) {
+					e.preventDefault();
+					showHomeAndMainContent();
+				});
+
+				navLinks.forEach((link) => {
+					link.addEventListener("click", function (e) {
+						e.preventDefault();
+						const targetId = this.getAttribute("href").substring(1);
+
+						sections.forEach((section) => {
+							document.getElementById(section).style.display = "none";
+						});
+
+						document.getElementById(targetId).style.display = "block";
+						document.getElementById(targetId).style.animation =
+							"fadeInBanner 1s ease-in-out forwards";
+
+						const activeSectionHeight =
+							document.getElementById(targetId).scrollHeight;
+						document.body.style.minHeight = `${activeSectionHeight + 100}px`;
+					});
+				});
+
+				// Show only the Home and Main Content sections at the start
+				showHomeAndMainContent();
+			});
+		</script>
+	</body>
+</html>
