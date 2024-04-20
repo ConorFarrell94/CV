@@ -1,1 +1,1 @@
-# To see webpage - [Github Pages](https://conorfarrell94.github.io/CV/)
+# To see webpage - [CV](https://conorfarrell94.github.io/CV/)
